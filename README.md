@@ -1,4 +1,4 @@
-# Unofficial Signing Service for Guest Token Restrictiona
+# Unofficial Signing Service for Guest Token Restriction
 
 # Get started
 
