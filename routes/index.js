@@ -33,7 +33,11 @@ router.get('/authorize', (req, res) => {
 
   const authorizeObj = oauth.authorize(request, token);
 
-  const url = new URL(redirect);
+  var playerUrl = redirect;
+  if(redirect.indexOf('?') != -1){
+    playerUrl = redirect.substring(0,redirect.indexOf('?'));
+  }
+  const url = new URL(playerUrl);
 
   Object.keys(authorizeObj).forEach((key) => {
     url.searchParams.append(key, authorizeObj[key]);
