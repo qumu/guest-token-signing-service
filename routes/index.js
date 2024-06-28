@@ -36,7 +36,7 @@ router.get('/authorize', (req, res) => {
   const url = new URL(redirect);
 
   Object.keys(authorizeObj).forEach((key) => {
-    url.searchParams.append(key, authorizeObj[key]);
+    url.searchParams.set(key, authorizeObj[key]);
   });
 
   res.redirect(url.toString())
