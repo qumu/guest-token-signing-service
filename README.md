@@ -4,7 +4,7 @@
 
 ## Configure your environment
 
-Your first action is to configure your server. Follow (https://success.qumucloud.com/hc/en-us/articles/360058524874-Guest-token-restriction) for more information.
+Your first action is to configure your server. Follow ([https://success.qumucloud.com/hc/en-us/articles/360058524874-Guest-token-restriction](https://enghouseglobal.atlassian.net/servicedesk/customer/portal/15/article/1082196260)) for more information.
 
 ```shell
 mv .env.example .env
